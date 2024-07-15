@@ -11,7 +11,7 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 
 # Copy the source code into the container
-COPY src /usr/src/app/src
+COPY calculator-app/src /usr/src/app/src
 
 # Build the application
 RUN mvn package
