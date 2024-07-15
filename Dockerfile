@@ -24,5 +24,5 @@ RUN mvn -X package
 EXPOSE 9080
 
 # Run the application
-CMD ["java", "Calculator"]
+CMD ["java", "-jar", "/usr/src/app/target/calculator-app-1.0-SNAPSHOT.jar"]
 
