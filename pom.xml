@@ -45,7 +45,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.example.Calculator</mainClass> <!-- Replace with your main class -->
+                            <mainClass>Calculator</mainClass> <!-- Replace with your main class -->
                         </manifest>
                     </archive>
                 </configuration>
