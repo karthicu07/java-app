@@ -1,0 +1,33 @@
+# Maven build directories
+/target/
+/.mvn/
+
+# IDE files
+/.idea/
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Compiled Java classes
+*.class
+
+# Maven wrapper
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled binaries (if applicable)
+/bin/
+/build/
+
+# Exclude sensitive or environment-specific configurations
+application.properties
+config.properties
+*.env
