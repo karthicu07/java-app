@@ -18,7 +18,7 @@ RUN mvn dependency:go-offline
 COPY calculator-app/src /usr/src/app/src
 
 # Build the application
-RUN mvn package
+RUN mvn -X package
 
 # Expose port 9080
 EXPOSE 9080
