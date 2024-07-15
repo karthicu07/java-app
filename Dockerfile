@@ -20,7 +20,7 @@ COPY calculator-app/src /usr/src/app/src
 # Build the application
 RUN mvn -X package
 
-COPY /usr/src/app/target/calculator-app-1.0-SNAPSHOT.jar ./calculator-app.jar
+COPY ./usr/src/app/target/calculator-app-1.0-SNAPSHOT.jar ./calculator-app.jar
 
 # Expose port 9080
 EXPOSE 9080
