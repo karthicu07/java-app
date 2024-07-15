@@ -1,5 +1,5 @@
 # Use AdoptOpenJDK as base image
-FROM oraclejdk:11
+FROM adoptopenjdk:11-jre-hotspot
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
