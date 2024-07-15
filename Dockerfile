@@ -1,6 +1,10 @@
 # Use AdoptOpenJDK as base image
 FROM adoptopenjdk:11-jre-hotspot
 
+# Install Maven and other required packages
+RUN apt-get update \
+    && apt-get install -y maven
+
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 
