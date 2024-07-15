@@ -1,5 +1,5 @@
 # Use AdoptOpenJDK as base image
-FROM adoptopenjdk:11-jre-hotspot
+FROM FROM oraclejdk:11
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
@@ -11,7 +11,7 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 
 # Copy the source code into the container
-COPY src ./src
+COPY src /usr/src/app/src
 
 # Build the application
 RUN mvn package
