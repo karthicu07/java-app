@@ -1,5 +1,5 @@
 # Use AdoptOpenJDK as base image
-FROM adoptopenjdk:11-jre-hotspot
+FROM adoptopenjdk:11-jdk-hotspot
 
 # Install Maven and other required packages
 RUN apt-get update \
